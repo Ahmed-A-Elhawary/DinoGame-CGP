@@ -1,12 +1,36 @@
 #include<GL/freeglut.h>
 
+void drawGround(){
 
+  glColor3f(0.0,0.8,0.0);
+  glBegin(GL_QUADS);
+    glVertex2f(0.0,50.0);
+    glVertex2f(800.0, 50.0);
+    glVertex2f(800.0, 0.0);
+    glVertex2f(0.0, 0.0);
+  glEnd();
 
+}
+void drawDino(){
+
+  glColor3f(0.8,0.3,0.0);
+  glBegin(GL_QUADS);
+    glVertex2f(100.0f, 150.0f);
+    glVertex2f(130.0f, 150.0f);
+    glVertex2f(130.0f, 100.0f);
+    glVertex2f(100.0f, 100.0f);
+  glEnd();
+
+}
 
 void display(){
 
   glClearColor(1,1,1,1);
   glClear(GL_COLOR_BUFFER_BIT);
+
+  //Draw the ground and the dino
+  drawGround();
+  drawDino();
 
   glutSwapBuffers();
 
@@ -29,7 +53,7 @@ int main(int argc, char** argv){
 
   // Create a window
   glutInitWindowSize(800,600);
-  glutCreateWindow("Dino Game - Step1");
+  glutCreateWindow("Dino Game");
 
 
   //set up callbacks
