@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1733418009 source:e:\diongame-cgp\main.cpp
+1733569343 source:e:\diongame-cgp\main.cpp
 	<GL/freeglut.h>
+	<iostream>
 
 1426338928 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\glut.h
 	"freeglut_std.h"
